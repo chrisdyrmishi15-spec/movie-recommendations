@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horror Movies</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    /* Header */
+    header {
+      background-color: #8b0000;
+      text-align: center;
+      padding: 25px;
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 24px;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 85vh;
+      background-image: url('https://media.gq.com/photos/59efa5f866e2d56abcd7a055/16:9/w_2560%2Cc_limit/state-of-horror-gq.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.65);
+      padding: 50px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .overlay h2 {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+
+    .overlay p {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: crimson;
+      color: white;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 30px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: darkred;
+    }
+
+    /* Movies Section */
+    .movies {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .movies h2 {
+      font-size: 55px;
+      color: crimson;
+      margin-bottom: 40px;
+    }
+
+    .movie-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .movie-card {
+      background-color: #111;
+      width: 250px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .movie-card h3 {
+      padding: 15px;
+      font-size: 28px;
+    }
+
+    .movie-card p {
+      padding: 0 15px 20px;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #8b0000;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Horror Movies</h1>
+    <p>The scariest place for horror fans.</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h2>Welcome to the Horror World</h2>
+      <p>Discover the darkest horror movies of all time.</p>
+      <button class="btn">Watch Now</button>
+    </div>
+  </section>
+
+  <!-- Top Movies -->
+  <section class="movies">
+    <h2>Top Horror Movies</h2>
+
+    <div class="movie-container">
+
+      <div class="movie-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLqF2yeYJuKk3KqYNAt2WvPQRvUTD4g1cuVQ&s" alt="The Conjuring">
+        <h3>The Conjuring</h3>
+        <p>Nje investigim traumatizues ne boten tjeter.</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNjkyMDU5ZWQtZDhkOC00ZWFjLWIyM2MtZWFhMDUzNjdlNzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Annabelle">
+        <h3>Annabelle</h3>
+        <p>Nje kukull e mallkuar sjell terror.</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbXLtpf0dZyDCeZOKmbygEaiAKEcXManfow&s" alt="IT">
+        <h3>IT</h3>
+        <p>Welcome to Derry.</p>
+      </div>
+
+<div class="movie-card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgBBoJs8ciR10AokvOyT-wj2cJgeezN2ibcKArp1skMAS0FBLJ7qPPhl6nEBrOdhbSIZ2u&s=10" alt="Midsommar">
+  <h3>Midsommar</h3>
+  <p>Nje udhetim traumatizues ne Suedi.</p>
+</div>
+
+<div class="movie-card">
+  <img src="https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_.jpg" alt="The Nun">
+  <h3>The Nun</h3>
+  <p>Një e keqe e lashtë zgjohet në hije.</p>
+</div>
+
+<div class="movie-card">
+  <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7156_p_v10_ae.jpg" alt="The Omen">
+  <h3>The Omen</h3>
+  <p>Damien, djali i Ferrit.</p>
+</div>
+
+<div class="movie-card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3se3Z9-TcFCryGpGzqmOj1_4cDGjBV1yrUeold2LPu8ojMbB5ONeM4Edgzav-0MMW_WxzQ&s=10" alt="Sinister">
+  <h3>Sinister</h3>
+  <p>Ellison beri nje gabim qe i kushtoi dhe familjen e tij.</p>
+</div>
+
+<div class="movie-card">
+  <img src="https://resizing.flixster.com/or3jxjzmcmu88rC-mcksfO642IU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzNmYjhmOGMzLWU1YjctNGEyNS04OTJhLWY4YmIwMjNmZmFiMC53ZWJw"A Quiet Place">
+  <h3>A Quiet Place</h3>
+  <p>Nese ata te degjojne.Ata te gjuajne.</p>
+</div>
+
+<div class="movie-card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTDygWOO32ZxJDRxuCC0AiyQZvSkHpcZLumg&s" alt="The Exorcist">
+  <h3>The Exorcist</h3>
+  <p>Kur një entitet misterioz pushton një vajzë të vogël, nëna e saj kërkon ndihmën e dy priftërinjve katolikë për t'i shpëtuar jetën.</p>
+</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Horror Movies | Krijuar Per Projekt TIK
+  </footer>
+
+</body>
+</html>

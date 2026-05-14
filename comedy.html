@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filma Komedik</title>
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        background:#111;
+        color:white;
+    }
+
+    header{
+        background:#ffcc00;
+        color:black;
+        padding:25px;
+        text-align:center;
+        font-size:32px;
+        font-weight:bold;
+    }
+
+    .container{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:20px;
+        padding:30px;
+    }
+
+    .movie-card{
+        background:#1e1e1e;
+        border-radius:15px;
+        overflow:hidden;
+        transition:0.3s;
+        box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .movie-card:hover{
+        transform:scale(1.05);
+    }
+
+    .movie-card img{
+        width:100%;
+        height:320px;
+        object-fit:cover;
+    }
+
+    .movie-info{
+        padding:15px;
+    }
+
+    .movie-info h2{
+        margin:0 0 10px;
+        font-size:22px;
+    }
+
+    .movie-info p{
+        color:#ccc;
+        font-size:14px;
+    }
+
+    footer{
+        text-align:center;
+        padding:20px;
+        background:#000;
+        color:#aaa;
+    }
+</style>
+</head>
+<body>
+
+<header>
+🎬 Filma Komedik 🎭
+</header>
+
+<div class="container">
+
+    <div class="movie-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-TMv1W398cputVqa56FHx_9VgYap03jxxlX5tJC79SrH2qkvnUDAfS36ObC6CciFg1Ed&s=10">
+        <div class="movie-info">
+            <h2>Home Alone</h2>
+            <p>Nje film klasik komedik me aventura dhe humor.</p>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdtNBFLeNzwb2WFQBebFYlmCI-JNkvvitraQNb2JBgsVh_-iWKJzHcNZFJK0k-HQ1GzwIX&s=10">
+        <div class="movie-info">
+            <h2>Mr. Bean's Holiday</h2>
+            <p>Mr. Bean shkakton kaos dhe te qeshura kudo qe shkon.</p>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShA-eoyMN1kpNA2gkrRXmbWlrstE5ZNou5BM3J6tTOkVkpxiwNLovDSAqZDVNpQ1d1N0Pd&s=10">
+        <div class="movie-info">
+            <h2>The Mask</h2>
+            <p>Nje komedi plot energji dhe skena qesharake.</p>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_.jpg">
+        <div class="movie-info">
+            <h2>The Hangover</h2>
+            <p>Nje nate e cmendur qe kthehet ne aventuren me qesharake.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+Faqe web per filma komedik 🍿
+</footer>
+
+</body>
+</html>
